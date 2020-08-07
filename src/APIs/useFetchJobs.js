@@ -35,11 +35,11 @@ const useFetchJobs = (params, page) => {
   const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true });
 
   useEffect(() => {
-    const cancelToken = axios.cancelToken.source();
+    const cancelToken = axios.cancelToken?.source();
     dispatch({ type: ACTIONS.MAKE_REQUEST });
     axios
       .get(BASE_URL, {
-        cancelToken: cancelToken.token,
+        cancelToken: cancelToken?.token,
         params: { markdown: true, page: page, ...params },
       })
       .then((res) => {
