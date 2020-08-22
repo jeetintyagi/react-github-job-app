@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Badge, Button, Collapse } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import { FcViewDetails } from "react-icons/fc";
+import { GoLocation } from "react-icons/go";
 
 export default function Job({ job }) {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,11 @@ export default function Job({ job }) {
             <Badge variant="secondary" className="mr-2">
               {job.type}
             </Badge>
-            <Badge variant="secondary">{job.location}</Badge>
+            <Badge variant="secondary">
+            <GoLocation />
+            {"  "}
+              {job.location}
+            </Badge>
             <div style={{ wordBreak: "break-all" }}>
               <ReactMarkdown source={job.how_to_apply} />
             </div>
@@ -39,9 +44,7 @@ export default function Job({ job }) {
             onClick={() => setOpen((prevOpen) => !prevOpen)}
             variant="primary"
           >
-            <FcViewDetails />
-            {open ? "Hide Details" : "View Details"}
-            
+            {open ? "Hide Details" : "View Details"} <FcViewDetails />
           </Button>
         </Card.Text>
         <Collapse in={open}>

@@ -14,14 +14,21 @@ function App() {
   return (
     <div>
       <Container className="my-4">
-        {!loading && (
-          <header className="">
-            <h1 className=" text-light mb-4 ">
-              <GoMarkGithub href="https://www.github.com" /> Github jobs
-            </h1>
-          </header>
+        <header className="btn">
+          <h1 className=" text-light mb-4 ">
+            <GoMarkGithub />
+            {"  "} GitJOBS
+          </h1>
+        </header>
+
+        {loading && (
+          <>
+            <SkeletonLoading />
+            <SkeletonLoading />
+            <SkeletonLoading />
+          </>
         )}
-        {loading && <SkeletonLoading />}
+
         {error && <h1>ERROR{error}. Try refreshing the page.</h1>}
         {jobs.map((job) => {
           return <Job key={job.id} job={job} />;

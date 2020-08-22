@@ -1,34 +1,32 @@
 import React from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import { Spinner } from "react-bootstrap";
+import { Card, Badge, Button } from "react-bootstrap";
+import { FcViewDetails } from "react-icons/fc";
+import { GoLocation } from "react-icons/go";
 
 const SkeletonLoading = () => {
-
   return (
     <div>
       <SkeletonTheme color="#4b5d67" highlightColor="#87556f">
-        <Spinner animation="border" variant="light" />
-
-        <p>
-          <Skeleton width={150} />
-          <Skeleton count={6} />
-          <Skeleton width={50} />
-        </p>
-        <p>
-          <Skeleton width={150} />
-          <Skeleton count={6} />
-          <Skeleton width={50} />
-        </p>
-        <p>
-          <Skeleton width={150} />
-          <Skeleton count={6} />
-          <Skeleton width={50} />
-        </p>
-        <p>
-          <Skeleton width={150} />
-          <Skeleton count={6} />
-          <Skeleton width={50} />
-        </p>
+        <Card className="mb-3 bg-dark">
+          <Card.Body>
+            <>
+              <Card.Title>
+                <Skeleton width={200} />
+              </Card.Title>
+              <Badge variant="secondary" className="mr-2">
+                <GoLocation />
+                {"  "}
+                Location
+              </Badge>
+              <Skeleton count={6} />
+              <br />
+              <Button variant="primary">
+                View Details <FcViewDetails />
+              </Button>
+            </>
+          </Card.Body>
+        </Card>
       </SkeletonTheme>
     </div>
   );
