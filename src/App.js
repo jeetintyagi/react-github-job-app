@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import useFetchJobs from "./APIs/useFetchJobs";
-import Job from "./screens/Job";
-import SkeletonLoading from "./screens/SkeletonLoading";
+import Job from "./Screens/Job";
+import SkeletonLoading from "./Screens/SkeletonLoading";
 import { GoMarkGithub } from "react-icons/go";
 import JobsPagination from "./Components/JobsPagination";
 import SearchForm from "./Components/SearchForm";
@@ -14,11 +14,11 @@ function App() {
   const { jobs, loading, error, hasNextPage } = useFetchJobs(params, page);
 
   function handleParamChange(e) {
-    const params = e.target.param;
+    const param = e.target.name;
     const value = e.target.value;
     setPage(1);
     setParams((prevParams) => {
-      return { ...prevParams, [params]: value };
+      return { ...prevParams, [param]: value };
     });
   }
 
@@ -34,10 +34,7 @@ function App() {
           </header>
         }
 
-        <SearchForm
-          params={params}
-          onParamChange={handleParamChange}
-        />
+        <SearchForm params={params} onParamChange={handleParamChange} />
 
         <JobsPagination
           page={page}
@@ -47,6 +44,8 @@ function App() {
 
         {loading && (
           <>
+            <SkeletonLoading />
+            <SkeletonLoading />
             <SkeletonLoading />
             <SkeletonLoading />
             <SkeletonLoading />
