@@ -3,11 +3,13 @@ import { Card, Badge, Button, Collapse } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import { FcViewDetails } from "react-icons/fc";
 import { GoLocation } from "react-icons/go";
+import "./Job.css";
+
 
 export default function Job({ job }) {
   const [open, setOpen] = useState(false);
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 Card" >
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>

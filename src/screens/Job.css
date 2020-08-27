@@ -1,0 +1,10 @@
+.Card {
+  padding: 15px; /* JUST TO LOOK COOL */
+  border: 1px solid #eee; /* JUST TO LOOK COOL */
+  transition: all 0.3s ease-in-out;
+}
+
+.Card:hover {
+  box-shadow: #121212 0px 19px 30px;
+  transform: translate3d(0px, -6px, 4px);
+}

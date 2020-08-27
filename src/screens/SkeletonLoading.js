@@ -7,7 +7,7 @@ import { GoLocation } from "react-icons/go";
 const SkeletonLoading = () => {
   return (
     <div>
-      <SkeletonTheme color="#4b5d67" highlightColor="#87556f">
+      <SkeletonTheme color="#4b5d67" highlightColor="#6b8590">
         <Card className="mb-3 bg-dark">
           <Card.Body>
             <>
