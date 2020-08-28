@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jeetintyagi/react-github-job-app/static/css/main.64cde6bb.chunk.css",
+    "main.js": "/jeetintyagi/react-github-job-app/static/js/main.d3ac5ae7.chunk.js",
+    "main.js.map": "/jeetintyagi/react-github-job-app/static/js/main.d3ac5ae7.chunk.js.map",
+    "runtime-main.js": "/jeetintyagi/react-github-job-app/static/js/runtime-main.c86c88ac.js",
+    "runtime-main.js.map": "/jeetintyagi/react-github-job-app/static/js/runtime-main.c86c88ac.js.map",
+    "static/js/2.f1e8c58c.chunk.js": "/jeetintyagi/react-github-job-app/static/js/2.f1e8c58c.chunk.js",
+    "static/js/2.f1e8c58c.chunk.js.map": "/jeetintyagi/react-github-job-app/static/js/2.f1e8c58c.chunk.js.map",
+    "index.html": "/jeetintyagi/react-github-job-app/index.html",
+    "precache-manifest.95cc331d21565279ed6dc7e65ee75172.js": "/jeetintyagi/react-github-job-app/precache-manifest.95cc331d21565279ed6dc7e65ee75172.js",
+    "service-worker.js": "/jeetintyagi/react-github-job-app/service-worker.js",
+    "static/css/main.64cde6bb.chunk.css.map": "/jeetintyagi/react-github-job-app/static/css/main.64cde6bb.chunk.css.map",
+    "static/js/2.f1e8c58c.chunk.js.LICENSE.txt": "/jeetintyagi/react-github-job-app/static/js/2.f1e8c58c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c86c88ac.js",
+    "static/js/2.f1e8c58c.chunk.js",
+    "static/css/main.64cde6bb.chunk.css",
+    "static/js/main.d3ac5ae7.chunk.js"
+  ]
+}
