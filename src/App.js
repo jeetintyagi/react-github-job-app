@@ -52,7 +52,7 @@ function App() {
           </>
         )}
 
-        {error && <h1>ERROR{error}. Try refreshing the page.</h1>}
+        {error && <h1>ERROR{error}. Try reloading the page.</h1>}
         {jobs.map((job) => {
           return <Job key={job.id} job={job} />;
         })}

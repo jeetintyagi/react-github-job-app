@@ -5,11 +5,10 @@ import { FcViewDetails } from "react-icons/fc";
 import { GoLocation } from "react-icons/go";
 import "./Job.css";
 
-
 export default function Job({ job }) {
   const [open, setOpen] = useState(false);
   return (
-    <Card className="mb-3 Card" >
+    <Card className="mb-3 Card">
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -26,8 +25,8 @@ export default function Job({ job }) {
               {job.type}
             </Badge>
             <Badge variant="secondary">
-            <GoLocation />
-            {"  "}
+              <GoLocation />
+              {"  "}
               {job.location}
             </Badge>
             <div style={{ wordBreak: "break-all" }}>
